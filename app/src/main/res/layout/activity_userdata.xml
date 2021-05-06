@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="265dp"
+            android:layout_height="287dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="61dp"
+            android:layout_marginRight="61dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/ic_undraw_profile_pic" />
+
+        <LinearLayout
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/name"
+                android:textColor="#2196F3"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/user_name"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="@string/mobile_number"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/userphonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/mobile_no"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/email_id"
+                android:textColor="#2196F3"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_account_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/email_id"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="@string/account_no"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/account_no"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ifsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/bank_account_no"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="@string/ifsc_code"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <TextView
+                android:id="@+id/ifsc_code"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_below="@id/ifsc"
+            android:layout_marginStart="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:text="@string/current_balance"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <TextView
+                    android:id="@+id/rupee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/current_balance"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_button"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/send_money"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

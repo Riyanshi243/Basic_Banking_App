@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Basic Banking App</string>
+    <string name="logo">logo</string>
+    <string name="name">Name :</string>
+    <string name="mobile_number">Mobile Number :</string>
+    <string name="email_id">Email Id :</string>
+    <string name="account_no">Account No :</string>
+    <string name="ifsc_code">IFSC Code :</string>
+    <string name="current_balance">Current balance :</string>
+    <string name="send_money">Send money</string>
+    <string name="rupee_symbol">₹ </string>
+    <string name="users">Users</string>
+    <string name="transactions">Transactions</string>
+    <string name="send">Select a user to transfer money</string>
+    <string name="phone_number">Phone number</string>
+    <string name="balance"> balance</string>
+    <string name="user_name">User Name</string>
+    <string name="transaction_status">Transaction status</string>
+    <string name="amount">Amount</string>
+    <string name="date">date</string>
+    <string name="name2">name2</string>
+    <string name="name1">name1</string>
+    <string name="arrow">arrow</string>
+    <string name="no_history">NO HISTORY</string>
+</resources>

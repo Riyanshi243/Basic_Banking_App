@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="24dp"
+
+                android:fontFamily="casual"
+                android:gravity="center_horizontal"
+                android:text="Basic Banking App\nMY BANK"
+                android:textAlignment="center"
+                android:textColor="#2196F3"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <GridLayout
+
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                tools:targetApi="lollipop">
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/bg2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:rotationX="0">
+
+                <ImageView
+                    android:id="@+id/customer"
+                    android:layout_width="297dp"
+                    android:layout_height="164dp"
+                    android:contentDescription="@string/users"
+                    android:src="@drawable/ic_undraw_people_tax" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Existing Users"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp"
+                tools:ignore="UnusedAttribute">
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:background="@drawable/bg2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/Transactions"
+                    android:layout_width="309dp"
+                    android:layout_height="159dp"
+                    android:contentDescription="@string/transactions"
+                    android:src="@drawable/ic_undraw_transfer_money1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction History"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
